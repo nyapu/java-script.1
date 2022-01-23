@@ -1,0 +1,53 @@
+
+
+git init--->
+
+git status
+
+((((  local Files===> Staging Area===> Repository )))
+
+
+git add [file1.txt]//add to staging area
+
+config:
+git commite -m first file
+
+
+git config --globla user.email "clashidgithub736@gmail.com"
+git config --globla user.name "sameer nyapu"
+
+
+
+git config --list
+
+tp add file to staging area:
+git add filename
+git add filename1 filename2
+git add . =>all file add
+
+
+git log => view commit history
+git log --oneline =>view in oneline 
+
+git checkout SHA-1
+git ceckout master
+
+
+git remote add origin https://github.com/nyapu/java-script.1.git
+
+push our code to github 
+git push origin master git
+
+
+
+
+
+
+git config --global user.email "imnyapu@gmail.com"
+
+git config --global user.name "sameer nyapu"
+
+
+git remote add origin https://github.com/nyapu/project.1.git
+
+
