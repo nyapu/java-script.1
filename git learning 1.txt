@@ -37,7 +37,8 @@ git remote add origin https://github.com/nyapu/java-script.1.git
 
 push our code to github 
 git push origin master git
-
+o
+git pull
 
 
 
@@ -51,3 +52,5 @@ git config --global user.name "sameer nyapu"
 git remote add origin https://github.com/nyapu/project.1.git
 
 
+$ git push -u origin main
+git branch -m master   {main --> master}
