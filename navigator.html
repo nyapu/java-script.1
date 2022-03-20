@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <div id="hi"></div>
+    
+</body>
+<script>
+    /* Browser Application Name*/
+    document.getElementById("demo").innerHTML="appName is"+navigator.appName;
+    /* Browser Application Code Name*/
+    document.getElementById("demo").innerHTML="app code name"+navigator.appCodeName;
+    /* Browser Engine*/
+    document.getElementById("demo").innerHTML="product is"+navigator.product;
+    /* Browser version*/
+document.getElementById("hi").innerHTML="appversion is"+navigator.appVersion;
+
+
+    /*The Browser Lnaguage*/
+    //document.getElementById("demo").innerHTML=navigator.language;
+// document.getElementById("demo").innerHTML=navigator.languages;
+
+/*  Is java Enabled?*/
+// document.getElementById("demo").innerHTML=navigator.javaEnabled();
+
+  /*   Is Browser Online?*/
+// document.getElementById("demo").innerHTML="navigator.online is"+navigator.onLine;
+</script>
+</html>

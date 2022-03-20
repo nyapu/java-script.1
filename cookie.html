@@ -1,0 +1,49 @@
+<html>
+
+<head>
+    <title></title>
+</head>
+
+<body>
+    <p>be happy</p>
+    <h1>Cookies</h1>
+    <form action="" name="myform" method="post">
+        Name:<input type="text" name="name"><br><br>
+        Email:<input type="email" name="email"><br><br>
+        language:<input type="text" name="lang" id="">
+        <input type="button" value="Set Cookies" name="set" onclick="setcookies()">
+        
+        <input type="button" value="Get Cookies" name="get" onclick="getcookies()">
+        
+        
+    </form>
+</body>
+<script>
+    function setcookies(){
+        document.cookie="name=" + document.myform.name.value + "; max-age="+60*60*24*10;
+        document.cookie="email=" + document.myform.email.value;
+        document.cookie="language=" + document.myform.lang.value;
+
+    }
+    function getcookies(){
+        var cookieArray=document.cookie.split(";");
+        // alert(cookieArray);
+        // console.log(cookieArray);
+        for (var i = 0; i < cookieArray.length; i++) {
+          var valueArray=cookieArray[i].split("=");
+    //  console.log(valueArray); 
+       if(valueArray[0].trim()=='name'){
+          document.myform.name.value=valueArray[1];
+        }
+        if(valueArray[0]==' email'){
+            document.myform.email.value=valueArray[1];
+        }
+        if(valueArray[0]==' language'){
+            document.myform.lang.value=valueArray[1];
+        }
+       }
+    }
+
+</script>
+
+</html>

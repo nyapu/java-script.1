@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <title>Document</title>
+</head>
+<body>
+    <p>geolocation</p>
+    <p>
+        latitude:<span id="latitude"></span>&deg;<br>
+        longitude:<span id="longitude"></span>&deg;
+    </p>
+</body>
+<script>
+    navigator.geolocation.getCurrentPosition(position =>{
+const lat=position.coords.latitude;
+const long=position.coords.longitude;
+document.getElementById("latitude").textContent=lat;
+document.getElementById("longitude").textContent=long;
+        console.log(position);
+    })
+</script>
+</html>
